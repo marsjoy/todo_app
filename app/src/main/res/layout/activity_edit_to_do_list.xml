@@ -9,6 +9,15 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="mars_williams.codepathtodoapp.Activities.MainActivity" >
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_save_task_label"
+        android:id="@+id/buttonSaveEdit"
+        android:onClick="onSaveTask"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,15 +35,6 @@
         android:ems="10"
         android:id="@+id/editTask"
         android:layout_below="@+id/textViewEdit"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_save_task_label"
-        android:id="@+id/buttonSaveEdit"
-        android:onClick="onSaveTask"
-        android:layout_centerVertical="true"
         android:layout_alignParentStart="true" />
 
 </RelativeLayout>

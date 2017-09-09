@@ -4,14 +4,14 @@
 
 Submitted by: **Mars Williams**
 
-Time spent: **3** hours spent in total
+Time spent: **10** hours spent in total
 
 ## User Stories
 
 The following **required** functionality is completed:
 
 * [x] User can **successfully add and remove items** from the todo list
-* [ ] User can **tap a todo item in the list and bring up an edit screen for the todo item** and then have any changes to the text reflected in the todo list.
+* [x] User can **tap a todo item in the list and bring up an edit screen for the todo item** and then have any changes to the text reflected in the todo list.
 * [x] User can **persist todo items** and retrieve them properly on app restart
 
 The following **optional** features are implemented:
@@ -31,7 +31,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/aosIFff.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -45,11 +45,13 @@ As part of your pre-work submission, please reflect on the app and answer the fo
 
 **Question 2:** "Take a moment to reflect on the `ArrayAdapter` used in your pre-work. How would you describe an adapter in this context and what is its function in Android? Why do you think the adapter is important? Explain the purpose of the `convertView` in the `getView` method of the `ArrayAdapter`."
 
-**Answer:** [Enter your answer here in a paragraph or two].
+**Answer:** The ArrayAdapter in the ToDo App served to bind the View objects to the task descriptions, each contained as a item in the ListView collection. The Adapter is important because it is a way to interact with view objects, without needing to be concerned about the specific bind mechanism for each collection type. The convertView method allows the ArrayAdapter to recycle old view objects that are no longer in use (like the deleted todo tasks), to improve performance of the app; this is in contrast to creating new view objects to replace ones that are removed. The getView method gets the view of an item's data at the specific position in the collection. 
 
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+My greatest challenge while building the app was keeping the iterations small, and remembering to scale down complexity. Originally, I made the whole app, with a persistent database, a custom adapter, and several model classes, but when I encountered bugs, it was difficult to entangle the working parts to find the source.
 
 ## License
 
